@@ -1,9 +1,5 @@
 import { forwardRef, useState } from "react";
 
-type ProjectsProps = {
-  cartRef: React.RefObject<HTMLDivElement | null>;
-};
-
 type Project = {
   title: string;
   video: string;
@@ -11,7 +7,7 @@ type Project = {
   full: string;
 };
 
-const Projects = forwardRef<HTMLDivElement, ProjectsProps>(({ cartRef }, ref) => {
+const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   const [expanded, setExpanded] = useState<number | null>(null);
 
   const toggleExpand = (index: number) => {

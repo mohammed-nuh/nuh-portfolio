@@ -19,7 +19,7 @@ function App() {
         <About />
         <Skills />
         <Education />
-        <Projects cartRef={cartRef} ref={cartRef} />
+        <Projects ref={cartRef} />
         <Achievements onCartClick={() => cartRef.current?.scrollIntoView({ behavior: 'smooth' })} />
         <Channel />
         <Contact />
