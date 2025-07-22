@@ -3,7 +3,7 @@ function Channel() {
     <section className="mb-5 animate__animated animate__fadeInUp px-3 text-center">
       <h2>Rapid Code (Channel)</h2>
       <p>
-        I run a content channel called <strong>Rapid Code</strong>, where I publish short, beginner-friendly videos explaining frontend concepts, coding mini-projects, and tips for aspiring developers.
+        I run a channel called <strong>Rapid Code</strong>, where I publish short, beginner-friendly videos explaining frontend concepts, coding mini-projects, and tips for aspiring developers.
       </p>
 
       {/* Long video */}
