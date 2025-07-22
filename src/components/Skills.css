@@ -37,3 +37,9 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 768px) {
+  .skills-ticker {
+    animation-duration: 5s; /* faster scroll on mobile */
+  }
+}

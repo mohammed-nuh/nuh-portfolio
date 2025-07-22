@@ -3,12 +3,14 @@ function Education() {
     <section className="mb-5 animate__animated animate__fadeInUp px-3 text-center">
       <h2 className="mb-4">Education</h2>
 
-      {/* Scrollable wrapper with padding to avoid cutoff */}
+      {/* Scrollable wrapper with left padding to avoid cutoff */}
       <div
         className="position-relative w-100"
         style={{
           overflowX: "auto",
           paddingBottom: "20px",
+          paddingLeft: "16px",           // ✅ Fix: prevents left-side cutoff
+          scrollPaddingLeft: "16px",     // ✅ Optional: for better scroll behavior
           WebkitOverflowScrolling: "touch",
         }}
       >
@@ -32,7 +34,10 @@ function Education() {
         >
           {/* Checkpoint 1 */}
           <div style={{ minWidth: "200px", zIndex: 1 }}>
-            <div className="rounded-circle bg-darkblue mx-auto mb-3" style={{ width: 20, height: 20 }}></div>
+            <div
+              className="rounded-circle bg-darkblue mx-auto mb-3"
+              style={{ width: 20, height: 20 }}
+            ></div>
             <h6 className="mb-1">ANAND ASHRAM CONVENT</h6>
             <small>(June 2021 – Mar 2022)</small>
             <div className="d-flex justify-content-center gap-2 mt-1">
@@ -43,7 +48,10 @@ function Education() {
 
           {/* Checkpoint 2 */}
           <div style={{ minWidth: "200px", zIndex: 1 }}>
-            <div className="rounded-circle bg-darkblue mx-auto mb-3" style={{ width: 20, height: 20 }}></div>
+            <div
+              className="rounded-circle bg-darkblue mx-auto mb-3"
+              style={{ width: 20, height: 20 }}
+            ></div>
             <h6 className="mb-1">Pace International</h6>
             <small>(Sept 2022 – Mar 2024)</small>
             <div className="d-flex justify-content-center gap-2 mt-1">
@@ -54,7 +62,10 @@ function Education() {
 
           {/* Checkpoint 3 */}
           <div style={{ minWidth: "200px", zIndex: 1 }}>
-            <div className="rounded-circle bg-darkblue mx-auto mb-3" style={{ width: 20, height: 20 }}></div>
+            <div
+              className="rounded-circle bg-darkblue mx-auto mb-3"
+              style={{ width: 20, height: 20 }}
+            ></div>
             <h6 className="mb-1">Amity Online</h6>
             <small>(July 2024 – Present)</small>
             <div className="d-flex justify-content-center gap-2 mt-1">
