@@ -104,7 +104,7 @@ function Achievements({ onCartClick }: AchievementsProps) {
               View on UWL RAK Website
             </a>
             <a
-              href="https://www.khaleejtimes.com/education/uae-indian-schoolboys-develop-app-to-detect-eye-diseases-win-honourable-mention-at-national-contest"
+              href="https://www.khaleejtimes.com/kt-network/the-university-of-west-london-rak-branch-hosts-idea-marathon"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-secondary"
