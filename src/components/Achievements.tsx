@@ -68,46 +68,57 @@ function Achievements({ onCartClick }: AchievementsProps) {
       </div>
 
       {/* Media Coverage Section */}
-      <div className="mb-5">
-        <h4 className="mb-4 text-decoration-underline">Media Coverage</h4>
+<div className="mb-5">
+  <h4 className="mb-4">Media Coverage</h4>
 
-        <div
-          className="card shadow-sm border-0 mx-auto"
-          style={{ maxWidth: "900px" }}
-        >
-          <div className="row g-0 align-items-center">
-            <div className="col-md-2 d-none d-md-block">
-              <img
-                src="images/UWLRak_logo.jpg" // Optional thumbnail icon
-                alt="News"
-                className="img-fluid p-3"
-              />
-            </div>
-            <div className="col-md-10">
-              <div className="card-body">
-                <p
-                  className="card-text"
-                  style={{ fontStyle: "italic", fontSize: "1.05rem" }}
-                >
-                  "The University of West London RAK Branch Campus hosted the
-                  grand finale of PAN UAE IDEA MARATHON on January 21...
-                  Mohammed Uzair Ateef, <mark>Mohammed Nuh Abuhuseina</mark> & Sandeep Singh
-                  from PACE International School, Sharjah became the runner-up
-                  in the Web Designing Competition."
-                </p>
-                <a
-                  href="https://uwl.ac.ae/news/uwl-rak-idea-marathon/#:~:text=Annet%20Cecil%20Thomas%20from%20The,Share%20Facebook%20Twitter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-primary mt-2"
-                >
-                  View Full Article
-                </a>
-              </div>
-            </div>
+  <div className="card shadow-sm border-0 mx-auto" style={{ maxWidth: "900px" }}>
+    <div className="row g-0 align-items-center">
+      <div className="col-md-2 d-none d-md-block">
+        <img
+          src="images/UWLRak_logo.jpg"
+          alt="News"
+          className="img-fluid p-3"
+        />
+      </div>
+      <div className="col-md-10">
+        <div className="card-body">
+          <p
+            className="card-text"
+            style={{ fontStyle: "italic", fontSize: "1.05rem" }}
+          >
+            "The University of West London RAK Branch Campus hosted the grand
+            finale of PAN UAE IDEA MARATHON on January 21... Mohammed Uzair Ateef,{" "}
+            <mark>Mohammed Nuh Abuhuseina</mark> & Sandeep Singh from PACE
+            International School, Sharjah became the runner-up in the Web Designing
+            Competition."
+          </p>
+
+          {/* Center-aligned buttons */}
+          <div className="d-flex justify-content-center flex-wrap gap-3 mt-3">
+            <a
+              href="https://uwl.ac.ae/news/uwl-rak-idea-marathon/#:~:text=Annet%20Cecil%20Thomas%20from%20The,Share%20Facebook%20Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-primary"
+            >
+              View on UWL RAK Website
+            </a>
+            <a
+              href="https://www.khaleejtimes.com/education/uae-indian-schoolboys-develop-app-to-detect-eye-diseases-win-honourable-mention-at-national-contest"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-secondary"
+            >
+              View on Khaleej Times
+            </a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
     </section>
   );
 }
