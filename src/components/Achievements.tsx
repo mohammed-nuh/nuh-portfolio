@@ -18,7 +18,7 @@ function Achievements({ onCartClick }: AchievementsProps) {
             <div className="card-body">
               <h5 className="card-title">Runners Up - UWL RAK Web Design</h5>
               <p className="card-text">
-                Our team secured 2nd place in the PAN UAE IDEA MARATHON 2024
+                Our team secured 2nd place in the PAN UAE IDEA MARATHON 2022
                 hosted by UWL RAK. I developed the{" "}
                 <strong>Voice-Based Cart Adding System</strong> project that
                 earned us this position. The entire codebase was written by me
