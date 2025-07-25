@@ -74,7 +74,21 @@ const Projects = forwardRef<HTMLDivElement>((_, ref) => {
                 Your browser does not support the video tag.
               </video>
               <div className="card-body text-start">
-                <h5 className="card-title">{project.title}</h5>
+                <h5 className="card-title d-flex align-items-center gap-2">
+                  {project.title}
+                  {project.title === "Ecommerce App" && (
+                    <a
+                      href="https://ecommerce-app-host.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-sm btn-outline-danger d-flex align-items-center gap-1"
+                      style={{ fontSize: "0.75rem", padding: "2px 6px" }}
+                    >
+                      <span className="live-dot"></span> Live
+                    </a>
+                  )}
+                </h5>
+
                 <p className="card-text">
                   {expanded === index ? project.full : project.short}
                 </p>
@@ -89,6 +103,33 @@ const Projects = forwardRef<HTMLDivElement>((_, ref) => {
           </div>
         ))}
       </div>
+
+      {/* Styles for live dot animation */}
+      <style>{`
+        .live-dot {
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          background-color: red;
+          border-radius: 50%;
+          animation: pulse 1.2s infinite;
+        }
+
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+            opacity: 0.9;
+          }
+          50% {
+            transform: scale(1.6);
+            opacity: 0.4;
+          }
+          100% {
+            transform: scale(1);
+            opacity: 0.9;
+          }
+        }
+      `}</style>
     </section>
   );
 });
