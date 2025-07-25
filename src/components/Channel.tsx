@@ -3,7 +3,8 @@ function Channel() {
     <section className="mb-5 animate__animated animate__fadeInUp px-3 text-center">
       <h2>Rapid Code (Channel)</h2>
       <p>
-        I run a channel called <strong>Rapid Code</strong>, where I publish short, beginner-friendly videos explaining frontend concepts, coding mini-projects, and tips for aspiring developers.
+        I run a channel called <strong>Rapid Code</strong>, where I publish short, beginner-friendly
+        videos explaining frontend concepts, coding mini-projects, and tips for aspiring developers.
       </p>
 
       {/* Long video */}
@@ -17,42 +18,27 @@ function Channel() {
       </div>
 
       {/* Shorts */}
-      <div className="d-flex flex-wrap justify-content-center gap-3 mt-4">
-        <iframe
-          width="250"
-          height="444"
-          src="https://www.youtube.com/embed/Y-KnGuGw8CA"
-          title="Rapid Code Short 1"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-
-        <iframe
-          width="250"
-          height="444"
-          src="https://www.youtube.com/embed/9Bv9mA2ryUM"
-          title="Rapid Code Short 2"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-
-        <iframe
-          width="250"
-          height="444"
-          src="https://www.youtube.com/embed/vbRh6Ca1kUo"
-          title="Rapid Code Short 3"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-
-        <iframe
-          width="250"
-          height="444"
-          src="https://www.youtube.com/embed/D6Z1hY5J0WA"
-          title="Rapid Code Short 4"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+      <div className="container px-0">
+        <div className="row g-2">
+          {[
+            "Y-KnGuGw8CA",
+            "9Bv9mA2ryUM",
+            "vbRh6Ca1kUo",
+            "D6Z1hY5J0WA",
+          ].map((id, i) => (
+            <div key={i} className="col-6 col-md-3 d-flex justify-content-center">
+              <iframe
+                width="100%"
+                height="444"
+                src={`https://www.youtube.com/embed/${id}`}
+                title={`Rapid Code Short ${i + 1}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ maxWidth: "250px" }}
+              ></iframe>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
