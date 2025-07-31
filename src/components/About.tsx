@@ -21,13 +21,14 @@ function About() {
           {showFull ? "Read Less" : "Read More"}
         </button>
 
-        <a
-          href="/Nuh_Resume.pdf"
-          download
-          className="btn btn-primary btn-sm"
-        >
-          Download Resume
-        </a>
+
+       <a
+  href="/Nuh_Resume.pdf"
+  download
+  className="btn btn-custom btn-sm d-flex align-items-center gap-1"
+>
+  <img src="/pdf.png" alt="PDF icon" width="20" height="20" />Download Resume</a>
+
       </div>
     </section>
   );
