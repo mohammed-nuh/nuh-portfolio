@@ -12,12 +12,23 @@ function About() {
       <p style={{ maxWidth: '1000px', margin: '0 auto' }}>
         {showFull ? fullText : shortText}
       </p>
-      <button
-        className="btn btn-outline-primary btn-sm mt-3"
-        onClick={() => setShowFull(!showFull)}
-      >
-        {showFull ? "Read Less" : "Read More"}
-      </button>
+
+      <div className="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+        <button
+          className="btn btn-outline-primary btn-sm"
+          onClick={() => setShowFull(!showFull)}
+        >
+          {showFull ? "Read Less" : "Read More"}
+        </button>
+
+        <a
+          href="/Nuh_Resume.pdf"
+          download
+          className="btn btn-primary btn-sm"
+        >
+          Download Resume
+        </a>
+      </div>
     </section>
   );
 }
